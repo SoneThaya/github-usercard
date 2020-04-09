@@ -28,108 +28,6 @@
           user, and adding that card to the DOM.
 */
 
-const followersArray = [
-  {
-    "login": "NathanNNguyen",
-    "id": 56426604,
-    "node_id": "MDQ6VXNlcjU2NDI2NjA0",
-    "avatar_url": "https://avatars2.githubusercontent.com/u/56426604?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/NathanNNguyen",
-    "html_url": "https://github.com/NathanNNguyen",
-    "followers_url": "https://api.github.com/users/NathanNNguyen/followers",
-    "following_url": "https://api.github.com/users/NathanNNguyen/following{/other_user}",
-    "gists_url": "https://api.github.com/users/NathanNNguyen/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/NathanNNguyen/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/NathanNNguyen/subscriptions",
-    "organizations_url": "https://api.github.com/users/NathanNNguyen/orgs",
-    "repos_url": "https://api.github.com/users/NathanNNguyen/repos",
-    "events_url": "https://api.github.com/users/NathanNNguyen/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/NathanNNguyen/received_events",
-    "type": "User",
-    "site_admin": false
-  },
-  {
-    "login": "jiayi-ren",
-    "id": 45396888,
-    "node_id": "MDQ6VXNlcjQ1Mzk2ODg4",
-    "avatar_url": "https://avatars1.githubusercontent.com/u/45396888?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/jiayi-ren",
-    "html_url": "https://github.com/jiayi-ren",
-    "followers_url": "https://api.github.com/users/jiayi-ren/followers",
-    "following_url": "https://api.github.com/users/jiayi-ren/following{/other_user}",
-    "gists_url": "https://api.github.com/users/jiayi-ren/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/jiayi-ren/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/jiayi-ren/subscriptions",
-    "organizations_url": "https://api.github.com/users/jiayi-ren/orgs",
-    "repos_url": "https://api.github.com/users/jiayi-ren/repos",
-    "events_url": "https://api.github.com/users/jiayi-ren/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/jiayi-ren/received_events",
-    "type": "User",
-    "site_admin": false
-  },
-  {
-    "login": "NickNori98",
-    "id": 61979443,
-    "node_id": "MDQ6VXNlcjYxOTc5NDQz",
-    "avatar_url": "https://avatars1.githubusercontent.com/u/61979443?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/NickNori98",
-    "html_url": "https://github.com/NickNori98",
-    "followers_url": "https://api.github.com/users/NickNori98/followers",
-    "following_url": "https://api.github.com/users/NickNori98/following{/other_user}",
-    "gists_url": "https://api.github.com/users/NickNori98/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/NickNori98/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/NickNori98/subscriptions",
-    "organizations_url": "https://api.github.com/users/NickNori98/orgs",
-    "repos_url": "https://api.github.com/users/NickNori98/repos",
-    "events_url": "https://api.github.com/users/NickNori98/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/NickNori98/received_events",
-    "type": "User",
-    "site_admin": false
-  },
-  {
-    "login": "Kandelonius",
-    "id": 51350138,
-    "node_id": "MDQ6VXNlcjUxMzUwMTM4",
-    "avatar_url": "https://avatars3.githubusercontent.com/u/51350138?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/Kandelonius",
-    "html_url": "https://github.com/Kandelonius",
-    "followers_url": "https://api.github.com/users/Kandelonius/followers",
-    "following_url": "https://api.github.com/users/Kandelonius/following{/other_user}",
-    "gists_url": "https://api.github.com/users/Kandelonius/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/Kandelonius/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/Kandelonius/subscriptions",
-    "organizations_url": "https://api.github.com/users/Kandelonius/orgs",
-    "repos_url": "https://api.github.com/users/Kandelonius/repos",
-    "events_url": "https://api.github.com/users/Kandelonius/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/Kandelonius/received_events",
-    "type": "User",
-    "site_admin": false
-  },
-  {
-    "login": "nicholas-myers",
-    "id": 61495108,
-    "node_id": "MDQ6VXNlcjYxNDk1MTA4",
-    "avatar_url": "https://avatars0.githubusercontent.com/u/61495108?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/nicholas-myers",
-    "html_url": "https://github.com/nicholas-myers",
-    "followers_url": "https://api.github.com/users/nicholas-myers/followers",
-    "following_url": "https://api.github.com/users/nicholas-myers/following{/other_user}",
-    "gists_url": "https://api.github.com/users/nicholas-myers/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/nicholas-myers/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/nicholas-myers/subscriptions",
-    "organizations_url": "https://api.github.com/users/nicholas-myers/orgs",
-    "repos_url": "https://api.github.com/users/nicholas-myers/repos",
-    "events_url": "https://api.github.com/users/nicholas-myers/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/nicholas-myers/received_events",
-    "type": "User",
-    "site_admin": false
-  }
-];
 
 /* Step 3: Create a function that accepts a single object as its only argument,
           Using DOM methods and properties, create a component that will return the following DOM element:
@@ -192,14 +90,14 @@ function myProfile({ cardPic, userName, myName, locationData, githubLink, follow
   profileP.innerHTML = `Profile: <a href="${githubLink}">My Page</a>`
   followersP.textContent = `Followers: ${followersCount}`
   followingP.textContent = `Following: ${followingsCount}`
-  console.log(card)
+  // console.log(card)
   return card
   
 }
 
 axios.get('https://api.github.com/users/sonethaya')
   .then(response => {
-    console.log(response)
+    
     const cardPic = response.data.avatar_url
     const userName = response.data.login
     const myName = response.data.name
@@ -216,6 +114,41 @@ axios.get('https://api.github.com/users/sonethaya')
   .catch(error => {
 
   })
+
+  const followersArray = [
+    'tetondan',
+    'dustinmyers',
+    'justsml',
+    'luishrd',
+    'bigknell'
+  ];
+  
+
+followersArray.forEach(item => {
+  axios.get(`https://api.github.com/users/${item}`)
+    .then(
+      response => {
+        console.log(response)
+        const cardPic = response.data.avatar_url
+        const userName = response.data.login
+        const myName = response.data.name
+
+        const locationData = response.data.location
+        const followersCount = response.data.followers
+        const followingsCount = response.data.following
+        const githubLink = response.data.html_url
+
+        const profileCard = myProfile({ cardPic, userName, myName, locationData, githubLink, followersCount, followingsCount })
+        
+        cardEntryPoint.appendChild(profileCard)
+      }
+    )
+})
+  // .catch(
+  //   error => {
+  //     console.log("error")
+  //   }
+  // )
 
 /* List of LS Instructors Github username's: 
   tetondan
